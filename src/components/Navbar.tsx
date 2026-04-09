@@ -9,11 +9,9 @@ const Navbar = ({ activeTab, onTabChange }: NavbarProps) => {
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between px-5 md:px-8 h-[60px] bg-background/85 backdrop-blur-xl border-b border-border">
       <a href="#" className="flex items-center gap-2.5 no-underline">
-        <div className="w-9 h-9 bg-gradient-to-br from-crimson to-rose rounded-[10px] flex items-center justify-center text-lg shadow-[0_0_18px_hsl(var(--rose-glow))]">
-          🛡️
-        </div>
+        <img src="/izyl-logo.png" alt="Izyl logo" className="w-9 h-9 rounded-[10px] shadow-[0_0_18px_hsl(var(--rose-glow))]" />
         <span className="font-heading text-[19px] font-extrabold text-foreground">
-          Surak<span className="text-rose">sha</span>
+          Iz<span className="text-rose">yl</span>
         </span>
       </a>
       <div className="flex gap-1">
