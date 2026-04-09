@@ -164,8 +164,8 @@ const ContactSection = () => {
             <div className="animate-fade-up delay-400 bg-card border border-border rounded-2xl p-5">
               <div className="font-heading text-sm font-bold mb-4">📡 Reach Us Directly</div>
               {[
-                { icon: "📧", title: "Support Email", detail: "surakshasupport@gmail.com", sub: "Bugs & general help", color: "bg-rose/10" },
-                { icon: "🔒", title: "Security Issues", detail: "surakshasecurity8@gmail.com", sub: "Responsible disclosure", color: "bg-[hsl(var(--blue)/0.1)]" },
+                { icon: "📧", title: "Support Email", detail: "izylsupport@gmail.com", sub: "Bugs & general help", color: "bg-rose/10" },
+                { icon: "🔒", title: "Security Issues", detail: "developers.izyl@gmail.com", sub: "Responsible disclosure", color: "bg-[hsl(var(--blue)/0.1)]" },
               ].map((c) => (
                 <div key={c.title} className="flex gap-3 mb-4 last:mb-0">
                   <div className={`w-9 h-9 rounded-lg ${c.color} flex items-center justify-center text-base shrink-0`}>{c.icon}</div>
