@@ -24,7 +24,7 @@ interface DevCardProps {
   photo: string;
   badges: { label: string; type: "lead" | "core" | "ui" | "backend" }[];
   bio: string;
-  stats: { value: string; label: string }[];
+  stats?: { value: string; label: string }[];
   skills: string[];
   github?: string;
   linkedin?: string;
@@ -95,15 +95,6 @@ const DeveloperCard = ({
       <div className="px-7 pb-7">
         <p className="text-sm leading-[1.7] text-muted mb-5">{bio}</p>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 gap-3 mb-5">
-          {stats.map((s) => (
-            <div key={s.label} className="text-center p-3 bg-[rgba(255,255,255,0.02)] border border-border rounded-[10px]">
-              <div className="font-heading text-xl font-bold text-foreground mb-1">{s.value}</div>
-              <div className="text-[10px] text-muted uppercase tracking-wide">{s.label}</div>
-            </div>
-          ))}
-        </div>
 
         {/* Skills */}
         <div className="flex flex-wrap gap-1.5 mb-5">
