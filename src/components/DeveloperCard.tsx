@@ -119,19 +119,19 @@ const DeveloperCard = ({
           {github && (
             <a href={github} target="_blank" rel="noopener noreferrer"
               className="w-10 h-10 rounded-[10px] bg-[rgba(255,255,255,0.04)] border border-border flex items-center justify-center text-muted transition-all hover:bg-[rgba(255,255,255,0.08)] hover:border-border-hover hover:text-foreground hover:-translate-y-0.5">
-              <Github size={18} />
+              <GithubIcon />
             </a>
           )}
           {linkedin && (
             <a href={linkedin} target="_blank" rel="noopener noreferrer"
               className="w-10 h-10 rounded-[10px] bg-[rgba(255,255,255,0.04)] border border-border flex items-center justify-center text-muted transition-all hover:bg-[rgba(255,255,255,0.08)] hover:border-border-hover hover:text-foreground hover:-translate-y-0.5">
-              <Linkedin size={18} />
+              <LinkedinIcon />
             </a>
           )}
           {email && (
             <a href={`mailto:${email}`}
               className="w-10 h-10 rounded-[10px] bg-[rgba(255,255,255,0.04)] border border-border flex items-center justify-center text-muted transition-all hover:bg-[rgba(255,255,255,0.08)] hover:border-border-hover hover:text-foreground hover:-translate-y-0.5">
-              <Mail size={18} />
+              <MailIcon />
             </a>
           )}
         </div>
