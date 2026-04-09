@@ -14,12 +14,18 @@ const ContactSection = () => {
   const handleSubmit = () => {
     if (!formData.name || !formData.email || !formData.type || !formData.subject || formData.message.length < 10) return;
     setLoading(true);
+
+    const subject = `[${formData.type.toUpperCase()}] ${formData.subject}`;
+    const body = `Name: ${formData.name}%0AEmail: ${formData.email}%0AType: ${formData.type}%0APriority: ${priority || "normal"}%0A%0A${formData.message}`;
+    const mailtoLink = `mailto:developer.suraksha@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
     setTimeout(() => {
+      window.open(mailtoLink, "_blank");
       setLoading(false);
       const tid = "SKS-" + String(Math.floor(Math.random() * 90000) + 10000);
       setTicketId(tid);
       setSubmitted(true);
-    }, 1800);
+    }, 1200);
   };
 
   const resetForm = () => {
