@@ -17,7 +17,7 @@ const ContactSection = () => {
 
     const subject = `[${formData.type.toUpperCase()}] ${formData.subject}`;
     const body = `Name: ${formData.name}%0AEmail: ${formData.email}%0AType: ${formData.type}%0APriority: ${priority || "normal"}%0A%0A${formData.message}`;
-    const mailtoLink = `mailto:developer.suraksha@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    const mailtoLink = `mailto:developers.izyl@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
 
     setTimeout(() => {
       window.open(mailtoLink, "_blank");
