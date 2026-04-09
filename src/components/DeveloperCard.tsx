@@ -74,7 +74,7 @@ const DeveloperCard = ({
           headerGlow[variant]
         )} />
         <div className="w-[120px] h-[120px] rounded-full border-[3px] border-border-hover bg-gradient-to-br from-secondary to-background flex items-center justify-center text-[52px] relative z-10 overflow-hidden">
-          <img src={photo} alt={name} className="w-full h-full object-cover" />
+          <img src={photo} alt={name} className="w-full h-full object-cover object-top" />
         </div>
         <div className="relative z-10 mt-4">
           <div className="font-heading text-[22px] font-extrabold tracking-tight text-foreground">{name}</div>
