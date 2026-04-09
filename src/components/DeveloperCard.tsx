@@ -24,7 +24,7 @@ interface DevCardProps {
   photo: string;
   badges: { label: string; type: "lead" | "core" | "ui" | "backend" }[];
   bio: string;
-  stats: { value: string; label: string }[];
+  stats?: { value: string; label: string }[];
   skills: string[];
   github?: string;
   linkedin?: string;
